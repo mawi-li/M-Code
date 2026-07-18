@@ -1,0 +1,131 @@
+{
+    "displayName": "CSS",
+    "language": "css",
+    "tokens": {
+        "at-rule": {
+            "bold": true,
+            "foreground": "#C586C0",
+            "patterns": [
+                "@[A-Za-z-]+"
+            ],
+            "priority": 980,
+            "type": "regex"
+        },
+        "brace": {
+            "foreground": "#D4D4D4",
+            "patterns": [
+                "[{}]"
+            ],
+            "priority": 880,
+            "type": "regex"
+        },
+        "comment": {
+            "foreground": "#6A9955",
+            "italic": true,
+            "patterns": [
+                "/\\*[\\s\\S]*?\\*/"
+            ],
+            "priority": 1000,
+            "type": "regex"
+        },
+        "function": {
+            "foreground": "#DCDCAA",
+            "patterns": [
+                "[A-Za-z-]+(?=\\()"
+            ],
+            "priority": 920,
+            "type": "regex"
+        },
+        "hex-color": {
+            "foreground": "#D7BA7D",
+            "patterns": [
+                "#(?:[0-9A-Fa-f]{3}|[0-9A-Fa-f]{4}|[0-9A-Fa-f]{6}|[0-9A-Fa-f]{8})\\b"
+            ],
+            "priority": 950,
+            "type": "regex"
+        },
+        "important": {
+            "bold": true,
+            "foreground": "#C586C0",
+            "patterns": [
+                "!important"
+            ],
+            "priority": 910,
+            "type": "regex"
+        },
+        "number": {
+            "foreground": "#B5CEA8",
+            "patterns": [
+                "\\b\\d+(?:\\.\\d+)?\\b"
+            ],
+            "priority": 890,
+            "type": "regex"
+        },
+        "parenthesis": {
+            "foreground": "#D4D4D4",
+            "patterns": [
+                "[()]"
+            ],
+            "priority": 860,
+            "type": "regex"
+        },
+        "property": {
+            "foreground": "#9CDCFE",
+            "patterns": [
+                "\\b[A-Za-z-]+(?=\\s*:)"
+            ],
+            "priority": 930,
+            "type": "regex"
+        },
+        "pseudo": {
+            "foreground": "#D7BA7D",
+            "patterns": [
+                "::?[A-Za-z-]+"
+            ],
+            "priority": 970,
+            "type": "regex"
+        },
+        "selector": {
+            "foreground": "#D7BA7D",
+            "patterns": [
+                "(?<=^|}|,)\\s*[.#]?[A-Za-z_][A-Za-z0-9_-]*"
+            ],
+            "priority": 940,
+            "type": "regex"
+        },
+        "separator": {
+            "foreground": "#D4D4D4",
+            "patterns": [
+                "[:,;]"
+            ],
+            "priority": 870,
+            "type": "regex"
+        },
+        "string": {
+            "foreground": "#CE9178",
+            "patterns": [
+                "\"([^\"\\\\]|\\\\.)*\"",
+                "'([^'\\\\]|\\\\.)*'"
+            ],
+            "priority": 990,
+            "type": "regex"
+        },
+        "unit": {
+            "foreground": "#B5CEA8",
+            "patterns": [
+                "\\b\\d+(?:\\.\\d+)?(?:px|em|rem|vw|vh|vmin|vmax|%|deg|rad|turn|fr|ms|s|cm|mm|pt|pc|in|ch|ex)"
+            ],
+            "priority": 900,
+            "type": "regex"
+        },
+        "variable": {
+            "foreground": "#4FC1FF",
+            "patterns": [
+                "--[A-Za-z0-9_-]+"
+            ],
+            "priority": 960,
+            "type": "regex"
+        }
+    },
+    "version": 2
+}
