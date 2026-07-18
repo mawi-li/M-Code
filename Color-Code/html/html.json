@@ -1,0 +1,84 @@
+{
+    "displayName": "HTML",
+    "language": "html",
+    "tokens": {
+        "attribute": {
+            "foreground": "#9CDCFE",
+            "patterns": [
+                "\\b[A-Za-z_:][A-Za-z0-9:._-]*(?=\\s*=)"
+            ],
+            "priority": 850,
+            "type": "regex"
+        },
+        "comment": {
+            "foreground": "#6A9955",
+            "italic": true,
+            "patterns": [
+                "<!--[\\s\\S]*?-->"
+            ],
+            "priority": 1000,
+            "type": "regex"
+        },
+        "doctype": {
+            "bold": true,
+            "foreground": "#C586C0",
+            "patterns": [
+                "<!DOCTYPE\\s+[^>]+>"
+            ],
+            "priority": 990,
+            "type": "regex"
+        },
+        "entity": {
+            "foreground": "#D7BA7D",
+            "patterns": [
+                "&[A-Za-z0-9#]+;"
+            ],
+            "priority": 820,
+            "type": "regex"
+        },
+        "number": {
+            "foreground": "#B5CEA8",
+            "patterns": [
+                "\\b\\d+(\\.\\d+)?\\b"
+            ],
+            "priority": 810,
+            "type": "regex"
+        },
+        "operator": {
+            "foreground": "#D4D4D4",
+            "patterns": [
+                "="
+            ],
+            "priority": 840,
+            "type": "regex"
+        },
+        "string": {
+            "foreground": "#CE9178",
+            "patterns": [
+                "\"([^\"\\\\]|\\\\.)*\"",
+                "'([^'\\\\]|\\\\.)*'"
+            ],
+            "priority": 700,
+            "type": "regex"
+        },
+        "tag": {
+            "bold": true,
+            "foreground": "#569CD6",
+            "patterns": [
+                "(?<=</?)[A-Za-z][A-Za-z0-9:-]*"
+            ],
+            "priority": 900,
+            "type": "regex"
+        },
+        "tag-bracket": {
+            "foreground": "#808080",
+            "patterns": [
+                "</?",
+                "/?>"
+            ],
+            "priority": 890,
+            "type": "regex"
+        }
+    },
+    "version": 2
+}
